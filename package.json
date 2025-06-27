@@ -1,32 +1,32 @@
 {
-  "name": "private-dashboard",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "node server",
-    "build": "pnpm run build:client && pnpm run build:server",
-    "build:client": "vite build --outDir dist/client",
-    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
-    "preview": "cross-env NODE_ENV=production node server",
+	"name": "private-dashboard",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "node server",
+		"build": "pnpm run build:client && pnpm run build:server",
+		"build:client": "vite build --outDir dist/client",
+		"build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
+		"preview": "cross-env NODE_ENV=production node server",
 		"format": "pnpm exec biome format --write ./",
 		"lint": "pnpm exec biome lint --write ./",
 		"check": "pnpm exec biome check --write ./"
-  },
-  "dependencies": {
-    "compression": "^1.8.0",
-    "express": "^5.0.1",
-    "preact": "^10.26.2",
-    "preact-render-to-string": "^6.5.13",
-    "sirv": "^3.0.1"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.0.5",
-    "@preact/preset-vite": "^2.10.1",
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.13.4",
-    "cross-env": "^7.0.3",
-    "typescript": "~5.7.3",
-    "vite": "^6.1.1"
-  }
+	},
+	"dependencies": {
+		"compression": "^1.8.0",
+		"express": "^5.0.1",
+		"preact": "^10.26.2",
+		"preact-render-to-string": "^6.5.13",
+		"sirv": "^3.0.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.0.5",
+		"@preact/preset-vite": "^2.10.1",
+		"@types/express": "^5.0.0",
+		"@types/node": "^22.13.4",
+		"cross-env": "^7.0.3",
+		"typescript": "~5.7.3",
+		"vite": "^6.1.1"
+	}
 }
