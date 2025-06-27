@@ -16,6 +16,7 @@
 	"dependencies": {
 		"compression": "^1.8.0",
 		"express": "^5.0.1",
+		"modern-normalize": "^3.0.1",
 		"preact": "^10.26.2",
 		"preact-render-to-string": "^6.5.13",
 		"sirv": "^3.0.1"
